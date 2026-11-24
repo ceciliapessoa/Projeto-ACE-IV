@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuvem de pensamento computacional</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header"></header>
+  <main id="app"></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <aside id="assistant">
+    <section id="panel" aria-label="Assistente de aprendizagem" hidden>
+      <h2>Assistente</h2>
+      <div id="msgs" aria-live="polite"></div>
+      <div id="suggestions"></div>
+      <form id="chat-form">
+        <input id="chat-input" placeholder="Pergunte ao assistente" aria-label="Pergunte ao assistente" autocomplete="off">
+        <button class="btn small" type="submit">Enviar</button>
+      </form>
+    </section>
+    <button id="assistant-toggle" class="btn" aria-expanded="false">Assistente</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
